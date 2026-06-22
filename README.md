@@ -29,7 +29,9 @@ the current version and the right architecture for your server, then:
 
 ```bash
 wget https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
-tar -xvzf gitleaks_8.30.1_linux_x64.tar.gz gitleaks -C bin/
+tar -xvzf gitleaks_8.30.1_linux_x64.tar.gz gitleaks
+rm gitleaks_8.30.1_linux_x64.tar.gz
+mv gitleaks bin/
 chmod +x bin/gitleaks
 bin/gitleaks version
 ```
